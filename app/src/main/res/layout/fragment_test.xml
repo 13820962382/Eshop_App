@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/cart"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cart_empty"
+        android:textSize="16dp"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/me_nologin_btn_login"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/me_nologin_login"
+        android:textSize="@dimen/me_nologin_textSize"
+        android:textColor="@color/grad"
+        android:background="#ec3939"/>
+</LinearLayout>

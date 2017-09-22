@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:indicator_drawable_unselected="@drawable/indicator_yellow_radius"
+        app:indicator_drawable_selected="@drawable/white_radius"/>
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="促销单品"
+        android:textAppearance="@style/ContentText.Large"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_head"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+</LinearLayout>
